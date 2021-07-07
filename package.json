@@ -1,18 +1,12 @@
-
-
-
 {
   "name": "sampleportfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node app.js",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-    "heroku-postbuild": "npm install --prefix ./client"
-
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -41,9 +35,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "typescript": "~4.2.3"
-  },
-  "engines": {
-    "node": "4.1.1"
   }
-
 }
